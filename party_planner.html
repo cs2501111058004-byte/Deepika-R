@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>Party Planner - PocketSmart AI</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/planner.css">
+
+</head>
+
+<body>
+
+<main class="planner">
+
+    <a href="dashboard.html">
+        ← Dashboard
+    </a>
+
+    <h1>
+        Party Planner
+    </h1>
+
+
+    <form id="partyForm">
+
+        <input
+            id="budget"
+            type="number"
+            min="1"
+            step="0.01"
+            placeholder="Budget ₹"
+            required
+        >
+
+
+        <input
+            id="occasion"
+            placeholder="Occasion"
+            value="Birthday"
+        >
+
+
+        <input
+            id="guests"
+            type="number"
+            min="1"
+            placeholder="Guests"
+            value="20"
+            required
+        >
+
+
+        <input
+            id="venue"
+            placeholder="Venue"
+            value="Home"
+        >
+
+
+        <select id="food_preference">
+
+            <option>Mixed</option>
+            <option>Vegetarian</option>
+            <option>Non-Vegetarian</option>
+
+        </select>
+
+
+        <input
+            id="theme"
+            placeholder="Theme"
+            value="Simple"
+        >
+
+
+        <button type="submit">
+            Generate Plan
+        </button>
+
+    </form>
+
+
+    <div id="result"></div>
+
+</main>
+
+
+<script src="js/api.js"></script>
+<script src="js/party.js"></script>
+
+</body>
+</html>
