@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://127.0.0.1:8000/app/party_planner.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Party Planner - PocketSmart AI</title>
+
+    <link rel="stylesheet" href="./Party Planner - PocketSmart AI_files/style.css">
+
+    <link rel="stylesheet" href="./Party Planner - PocketSmart AI_files/planner.css">
+
+</head>
+
+<body>
+
+<main class="planner">
+
+    <a href="http://127.0.0.1:8000/app/dashboard.html">
+        ← Dashboard
+    </a>
+
+    <h1>
+        Party Planner
+    </h1>
+
+
+    <form id="partyForm">
+
+        <input id="budget" type="number" min="1" step="0.01" placeholder="Budget ₹" required="">
+
+
+        <input id="occasion" placeholder="Occasion" value="Birthday">
+
+
+        <input id="guests" type="number" min="1" placeholder="Guests" value="20" required="">
+
+
+        <input id="venue" placeholder="Venue" value="Home">
+
+
+        <select id="food_preference">
+
+            <option>Mixed</option>
+            <option>Vegetarian</option>
+            <option>Non-Vegetarian</option>
+
+        </select>
+
+
+        <input id="theme" placeholder="Theme" value="Simple">
+
+
+        <button type="submit">
+            Generate Plan
+        </button>
+
+    </form>
+
+
+    <div id="result"><div class="result-card">
+
+            <h2>
+                Party Budget Plan
+            </h2>
+
+            <p>
+                Estimated budget per guest: ₹750.00
+            </p>
+
+            <div class="item">
+
+                        <span>
+                            Food &amp; drinks
+                        </span>
+
+                        <b>
+                            ₹6,000
+                        </b>
+
+                    </div><div class="item">
+
+                        <span>
+                            Venue / setup
+                        </span>
+
+                        <b>
+                            ₹3,000
+                        </b>
+
+                    </div><div class="item">
+
+                        <span>
+                            Decor
+                        </span>
+
+                        <b>
+                            ₹2,250
+                        </b>
+
+                    </div><div class="item">
+
+                        <span>
+                            Cake / dessert
+                        </span>
+
+                        <b>
+                            ₹1,500
+                        </b>
+
+                    </div><div class="item">
+
+                        <span>
+                            Contingency
+                        </span>
+
+                        <b>
+                            ₹2,250
+                        </b>
+
+                    </div>
+
+            <div class="tips">
+
+                <b>Tips</b>
+
+                <ul>
+                    <li>
+                        Confirm guest count early.
+                    </li><li>
+                        Compare catering packages before booking.
+                    </li>
+                </ul>
+
+            </div>
+
+            <small>
+                Mode:
+                demo_fallback
+            </small>
+
+        </div></div>
+
+</main>
+
+
+<script src="./Party Planner - PocketSmart AI_files/api.js.download"></script>
+<script src="./Party Planner - PocketSmart AI_files/party.js.download"></script>
+
+
+</body></html>

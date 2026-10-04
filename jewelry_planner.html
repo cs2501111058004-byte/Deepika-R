@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>Jewelry Planner - PocketSmart AI</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/planner.css">
+
+</head>
+
+<body>
+
+<main class="planner">
+
+    <a href="dashboard.html">
+        ← Dashboard
+    </a>
+
+    <h1>
+        Jewelry Planner
+    </h1>
+
+
+    <form id="jewelryForm">
+
+        <input
+            id="budget"
+            type="number"
+            min="1"
+            step="0.01"
+            placeholder="Budget ₹"
+            required
+        >
+
+
+        <input
+            id="occasion"
+            placeholder="Occasion"
+            value="Wedding"
+        >
+
+
+        <select id="jewelry_type">
+
+            <option>Necklace</option>
+            <option>Earrings</option>
+            <option>Bangles</option>
+            <option>Ring</option>
+            <option>Set</option>
+
+        </select>
+
+
+        <select id="metal">
+
+            <option>Gold</option>
+            <option>Silver</option>
+            <option>Diamond</option>
+            <option>Imitation</option>
+
+        </select>
+
+
+        <select id="style">
+
+            <option>Traditional</option>
+            <option>Modern</option>
+            <option>Minimalist</option>
+            <option>Bridal</option>
+
+        </select>
+
+
+        <input
+            id="skin_tone"
+            placeholder="Skin tone (optional)"
+        >
+
+
+        <label>
+
+            Outfit image (optional)
+
+            <input
+                id="image"
+                type="file"
+                accept="image/*"
+            >
+
+        </label>
+
+
+        <button type="submit">
+            Generate Plan
+        </button>
+
+    </form>
+
+
+    <div id="result"></div>
+
+</main>
+
+
+<script src="js/api.js"></script>
+<script src="js/jewelry.js"></script>
+
+</body>
+</html>
